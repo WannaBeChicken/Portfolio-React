@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { HashLink as Link } from "react-router-hash-link";
-import ScrollToHashElement from "./ScrollToHashElement";
 // import Header from "./Header";
 // import Content from "./Content";
 import {
@@ -28,7 +27,6 @@ function NavBar() {
   return (
     
     <Container className="navbar-container">
-      <ScrollToHashElement />
       {/* <Header /> */}
       {/* <Content /> */}
       <Navbar className={issticky && "sticky"} bg="dark" variant="dark">
