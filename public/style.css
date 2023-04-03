@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+html{
+  /* background-image: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  ); */
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
+}
+body {
+  /* width: 75%; */
+  margin: 0 auto;
+  background-image: linear-gradient(270deg,#1b1429,#140f23);
+  color: white ;
+  font-family: "Raleway", serif !important;
+  /* background-color: purple; */
+}
+.content{
+  width:75%;
+  margin: 0 auto;
+}
+.purple{
+  color:#c770f0;
+}
+/*------------------- Nav Bar -----------------------------*/
+
+.sticky {
+ 
+  transition: all 0.3s ease-out 0s !important;
+  background-color: #1b1a2ea9 !important;
+  backdrop-filter: blur(15px) !important;
+  /* box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important; */
+  /* height: 3em; */
+}
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease-out 0s !important;
+  /* height: 3em; */
+  /* align-items: center; */
+}
+.navbar .container {
+  /* height: 3em; */
+  width:75%;
+  margin: 0 auto;
+  padding: 1em 0;
+  align-items: center;
+  font-size: 1.5em;
+  display: flex;
+  /* gap: 30px; */
+  /* flex-basis: 100%; */
+}
+
+.navbar-nav {
+  display: flex;
+  flex-grow: 1;
+  gap: 2em;
+  /* align-self: baseline; */
+  /* width:100%; */
+  justify-content: flex-end;
+}
+.navbar-nav:last-child{
+  margin-right: 3em;
+}
+.nav-link {
+  transition: all 0.3s ease-out 0s !important;
+  display: flex;
+  align-content: baseline;
+  gap: 0.5em;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+/* ---------------------------------------- Home Page Part1 ------------------------------------ */
+/* .home-container{
+  height:800px;
+} */
+.home-container .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 30%; */
+  padding-top: 100px;
+  /* height: 100em; */
+  /* flex-grow: 1; */
+  /* justify-content: space-evenly; */
+}
+.home-text {
+  flex-direction: column;
+  padding-top: 50px !important;
+  /* flex-wrap: wrap; */
+  /* align-content: flex-start !important; */
+  height: 100%;
+  flex-grow: 2;
+}
+.home-text h1 {
+  width: 100%;
+}
+
+.typewriter{
+  font-size: 50px;
+}
+.home-logo {
+  /* align-content: center; */
+  align-self: flex-start;
+  /* align-content: center; */
+  flex-grow: 1;
+}
+.home-logo img {
+  /* align-self: center; */
+  height: 400px;
+}
+
+/* ---------------------------------------- Home Page Part2 ------------------------------------ */
+
+.home2-container .container {
+  display: flex;
+  padding-top: 100px;
+}
+.home2-text {
+  flex-grow: 2;
+}
+
+.home2-text p {
+  width: 100%;
+}
+.home2-img img {
+  height: 300px;
+  width: 100%;
+}
+
+/*---------------------------------------- About Page --------------------------------------------*/
+
+.skillset{
+  margin-top: 10em;
+}
+.skillset p {
+  font-size: 2.5em;
+  text-align: center;
+}
+.skill-icon {
+  border: 1px solid;
+  font-size: 5em !important;
+
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col {
+  padding: 50px 50px;
+  border-radius: 30px 0 0 30px;
+
+  /* display: inline-block; */
+}
+.col svg {
+  padding: 30px 60px;
+}
+
+.toolset{
+  margin-top: 3em !important;
+}
