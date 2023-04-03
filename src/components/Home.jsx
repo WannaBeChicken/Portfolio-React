@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 function Home() {
   return (
     <>
-      <Container className="home-container">
+      <Container className="home-container" id="home">
         <Container>
           <Container className="home-text">
             <h1>Hi There!</h1>

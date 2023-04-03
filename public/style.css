@@ -141,9 +141,9 @@ a:active {
 }
 
 /*---------------------------------------- About Page --------------------------------------------*/
-
 .skillset{
-  margin-top: 10em;
+  /* margin-top: 13em; */
+  padding-top: 10em;
 }
 .skillset p {
   font-size: 2.5em;

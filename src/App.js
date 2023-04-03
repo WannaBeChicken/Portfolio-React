@@ -13,12 +13,14 @@ function App() {
     <div>
       <NavBar />
       <div className="content">
-      <Routes>
+        {<Home />}
+        {<About />}
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Project" element={<Project />} />
         <Route path="/Resume" element={<Resume />} />
-        </Routes>
+        </Routes> */}
         </div>
     </div>
   );

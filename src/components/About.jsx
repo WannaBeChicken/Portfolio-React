@@ -14,7 +14,7 @@ import {
 } from "react-icons/di";
 function About() {
   return (
-    <Container>
+    <Container id="about">
       <Container className="skillset">
         <p>Profession Skillset</p>
         <Row>
