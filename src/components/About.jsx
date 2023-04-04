@@ -16,7 +16,7 @@ function About() {
   return (
     <Container id="about">
       <Container className="skillset">
-        <p>Profession Skillset</p>
+        <p>Profession <strong className="purple">Skillset</strong></p>
         <Row>
           <Col>
             <DiNodejs className="skill-icon" />

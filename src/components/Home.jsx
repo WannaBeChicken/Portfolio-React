@@ -3,10 +3,11 @@ import { Container } from "react-bootstrap";
 import HomeLogo from "./home-main.svg";
 import Home2 from "./Home2";
 import Typewriter from "typewriter-effect";
-
+import Particle from "./Particles";
 function Home() {
   return (
     <>
+      <Particle />
       <Container className="home-container" id="home">
         <Container>
           <Container className="home-text">

@@ -182,3 +182,8 @@ a:active {
 .toolset {
   padding-top: 3em !important;
 }
+
+
+#tsparticles{
+  height:0;
+}

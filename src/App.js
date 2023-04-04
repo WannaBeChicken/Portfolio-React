@@ -7,10 +7,12 @@ import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Project from "./components/Project";
 import Resume from "./components/Resume";
-
+import Particle from "./components/Particles";
 function App() {
   return (
     <div>
+            <Particle />
+
       <NavBar />
       <div className="content">
         {<Home />}
