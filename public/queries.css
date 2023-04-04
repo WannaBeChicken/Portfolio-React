@@ -1,0 +1,19 @@
+@media (max-width:84em){
+    .nav-link{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:47em) {
+    .home-container .container{
+        flex-direction: column;
+    }
+    .typewriter{
+        font-size: 1.5rem;
+    }
+    .home2-container .container {
+        flex-direction: column;
+    }
+    
+}

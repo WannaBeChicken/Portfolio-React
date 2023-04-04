@@ -15,6 +15,7 @@ import {
 
 function NavBar() {
   const [issticky, updateNavbar] = React.useState(false);
+  const [expand, updateExpanded] = React.useState(false);
   function checkIfSticky() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -23,37 +24,53 @@ function NavBar() {
     }
   }
   window.addEventListener("scroll", checkIfSticky);
-  
+
   return (
-    
     <Container className="navbar-container">
       {/* <Header /> */}
       {/* <Content /> */}
-      <Navbar className={issticky && "sticky"} bg="dark" variant="dark">
+      <Navbar
+        expanded={expand}
+        className={issticky && "sticky"}
+        bg="dark"
+        variant="dark"
+      >
         <Container>
           <Navbar.Brand href="#home">Pratham</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link as={Link} smooth to="#home">
-              <AiOutlineHome className="icon" />
-              Home
-            </Nav.Link>
-            <Nav.Link as={Link} smooth to="#about">
-              <AiOutlineUser className="icon" />
-              About
-            </Nav.Link>
-            <Nav.Link as={Link} to="/project">
-              <AiOutlineFundProjectionScreen className="icon" />
-              Project
-            </Nav.Link>
-            <Nav.Link as={Link} to="/resume">
-              <AiOutlineAudit className="icon" />
-              Resume
-            </Nav.Link>
-            <Nav.Link as={Link} to="/resume">
-              <AiOutlineAudit className="icon" />
-              Resume
-            </Nav.Link>
-          </Nav>
+          {/* <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={() => {
+              updateExpanded(expand ? false : "expanded");
+            }}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </Navbar.Toggle> */}
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link as={Link} smooth to="#home" onClick={() => updateExpanded(false)}>
+                <AiOutlineHome className="icon" />
+                Home
+              </Nav.Link>
+              <Nav.Link as={Link} smooth to="#about" onClick={() => updateExpanded(false)}> 
+                <AiOutlineUser className="icon" />
+                About
+              </Nav.Link>
+              <Nav.Link as={Link} to="/project">
+                <AiOutlineFundProjectionScreen className="icon" />
+                Project
+              </Nav.Link>
+              <Nav.Link as={Link} to="/resume">
+                <AiOutlineAudit className="icon" />
+                Resume
+              </Nav.Link>
+              <Nav.Link as={Link} to="/resume">
+                <AiOutlineAudit className="icon" />
+                Resume
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </Container>
