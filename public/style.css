@@ -136,7 +136,7 @@ a:active {
 /* .home-container{
   height:800px;
 } */
-.home-container .container {
+.home-container .container , .home2-container .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +146,7 @@ a:active {
   /* flex-grow: 1; */
   /* justify-content: space-evenly; */
 }
-.home-text {
+.home-text , .home2-text{
   flex-direction: column;
   padding-top: 50px !important;
   /* flex-wrap: wrap; */
@@ -154,23 +154,42 @@ a:active {
   height: 100%;
   flex-grow: 2;
 }
-.home-text h1 {
+.home-text h1{
   width: 100%;
+}
+
+.home2-text {
+  width: 100px;
+}
+
+.home2-text span{
+  color: #c770f0;
+}
+
+.home2-text p {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+  line-height: 0.7cm;
 }
 
 .typewriter {
   font-size: 3.125rem;
 }
-.home-logo {
+.home-logo , .home2-img{
   /* align-content: center; */
   align-self: flex-start;
   /* align-content: center; */
   flex-grow: 1;
 }
-.home-logo img {
+.home-logo img , .home2-img img {
   /* align-self: center; */
   height: 400px;
 }
+
+/* .home2-text{
+  max-width: 500px;
+} */
 
 /* ---------------------------------------- Home Page Part2 ------------------------------------ */
 
@@ -179,14 +198,16 @@ a:active {
   padding-top: 100px;
 }
 .home2-text {
+  font-size: 1.3em;
   flex-grow: 2;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 
 .home2-text p {
   width: 100%;
 }
 .home2-img img {
-  height: 300px;
+  height: 220px;
   width: 100%;
 }
 
@@ -237,4 +258,97 @@ a:active {
 
 #tsparticles{
   height:0;
+}
+
+/* ---------------------------------------Projects ------------------------------------------------------- */
+
+.projects{
+  /* margin-top: 4em; */
+  margin-bottom: 7em;
+}
+.projects div{
+  text-align: center;
+  /* padding: 50px; */
+}
+
+.projects h1{
+  padding-top: 30px;
+  font-size: 3.1em;
+  /* font-weight: 3em; */
+}
+
+.projects p{
+  padding-top: 10px;
+  font-size: 1.3em;
+}
+
+.projects button{
+    width: 100%;
+    display: block;
+    background-color: #555;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px 0;
+}
+
+.project-icon {
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border-radius: 5px;
+  font-size: 5em !important;
+  max-width: 370px;
+}
+
+.project-icon:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;      
+}
+/* -------------------------------------footer----------------------------------- */
+
+
+.footer-container{
+  background-color: black;
+  display: grid;
+  min-height: 20%;
+  width: 100%;
+  grid-template-rows: 33% 33% 33%;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+.margin-top-bottom{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.round-img-net{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* margin-left: 30%; */
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid white; */
+  gap: 5vw;
+  padding-top: 2vh;
+}
+
+
+.footer-text-segment1{
+  padding-top: 7px;
+  text-align: center;
+  color: azure;
+}
+
+.footer-text-segment1 .text-xs{
+  text-decoration: underline;
 }

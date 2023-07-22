@@ -8,6 +8,7 @@ import About from "./components/About";
 import Project from "./components/Project";
 import Resume from "./components/Resume";
 import Particle from "./components/Particles";
+import Footer from "./components/footer";
 function App() {
   return (
     <div>
@@ -17,6 +18,8 @@ function App() {
       <div className="content">
         {<Home />}
         {<About />}
+        {<Project />}
+        
       {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
@@ -24,6 +27,7 @@ function App() {
         <Route path="/Resume" element={<Resume />} />
         </Routes> */}
         </div>
+        {<Footer />}
     </div>
   );
 }

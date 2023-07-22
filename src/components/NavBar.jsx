@@ -57,17 +57,17 @@ function NavBar() {
                 <AiOutlineUser className="icon" />
                 About
               </Nav.Link>
-              <Nav.Link as={Link} to="/project">
+              <Nav.Link as={Link} smooth to="#project" onClick={() => updateExpanded(false)}>
                 <AiOutlineFundProjectionScreen className="icon" />
                 Project
               </Nav.Link>
-              <Nav.Link as={Link} to="/resume">
+              <Nav.Link as={Link} to="https://drive.google.com/file/d/1cojm-aUaW2eENfNbjjfDRhD3N--lsmiO/view">
                 <AiOutlineAudit className="icon" />
                 Resume
               </Nav.Link>
-              <Nav.Link as={Link} to="/resume">
+              <Nav.Link as={Link} smooth to="#footer" onClick={() => updateExpanded(false)}>
                 <AiOutlineAudit className="icon" />
-                Resume
+                Contact
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
