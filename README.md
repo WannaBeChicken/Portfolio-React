@@ -1,1 +1,1 @@
-wannabechickenportfolio.netlify.app (wannabechickenportfolio.netlify.app)
+# [Goto the Website](https://wannabechickenportfolio.netlify.app/)
